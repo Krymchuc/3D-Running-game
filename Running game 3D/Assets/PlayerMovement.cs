@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 5;
+    public float speed = 10;
     public Rigidbody rb;
     public float horizontInput;
     public float vertInput;
@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             isGrounded = false;
-            GetComponent<Rigidbody>().AddForce(new Vector3(0, 500, 0));
+            GetComponent<Rigidbody>().AddForce(new Vector3(0, 400, 0));
         }
 
     }
